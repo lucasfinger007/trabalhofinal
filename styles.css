@@ -61,13 +61,13 @@ section h1 {
 .product-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+  
 }
 
 .product-grid2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+   
 }
 
 a {
