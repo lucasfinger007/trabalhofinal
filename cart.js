@@ -1,5 +1,3 @@
-// scripts/cart.js
-
 // Função para adicionar um produto ao carrinho
 function addToCart(name, price) {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
