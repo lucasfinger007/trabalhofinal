@@ -66,10 +66,7 @@ section h1 {
 
 .product-grid2 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    flex-wrap: wrap;
-
-   
+    grid-template-columns: repeat(2, 1fr);   
 }
 
 a {
