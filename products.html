@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Curiosa Modas</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+	<script src="../js/cart.js" defer></script>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="../images/logo.png" alt="Logo Curiosa Modas">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre Nós</a></li>
+                <li><a href="products.html">Produtos</a></li>
+                <li><a href="contact.html">Contato</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+				<li><a href="cart.html" onclick="showCart(); return false;">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count">0</span>
+                    </a>
+					</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="products">
+        <h1>Nossos Produtos</h1>
+        
+        <h2>Casual Chic</h2>
+        <div class="product-grid2">
+            <div class="product" id="produto1">
+                <a href="#">
+                    <img src="https://trimix.vtexassets.com/arquivos/ids/244470/2-005223STLE-TELHACL90131.jpg?v=637934021109600000" alt="Blusa Cropped Listrada">
+                    <h3>Blusa Cropped Listrada</h3>
+                    <p>Blusa cropped com listras horizontais em tons neutros.</p>
+					<p class="price">R$ 99,90</p>
+					<button class="buy-button" onclick="addToCart('Blusa Cropped Listrada', 59.90)">Comprar Agora</button>
+                </a>
+            </div>
+            <div class="product" id="produto2">
+                <a href="#">
+                    <img src="https://loftystyle.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/2/7/276a8912_1.png" alt="Calça Pantacourt Bege">
+                    <h3>Calça Pantacourt Bege</h3>
+                    <p>Calça pantacourt em tecido leve, perfeita para o verão.</p>
+					<p class="price">R$ 99,90</p>
+					<button class="buy-button" onclick="addToCart('Calça Pantacourt Bege', 59.90)">Comprar Agora</button>
+                </a>
+            </div>
+            <div class="product" id="produto3">
+                <a href="#">
+                    <img src="https://acdn.mitiendanube.com/stores/004/765/280/products/img-20240921-wa0164-a85db91a8f7cd7b61817269450290927-1024-1024.jpg" alt="Vestido Midi Floral">
+                    <h3>Vestido Midi Floral</h3>
+                    <p>Vestido midi com estampa floral delicada.</p>
+					<p class="price">R$ 99,90</p>
+					<button class="buy-button" onclick="addToCart('Vestido Midi Floral', 59.90)">Comprar Agora</button>
+                </a>
+            </div>
+            <div class="product" id="produto4">
+                <a href="#">
+                    <img src="https://qvestido.fbitsstatic.net/img/p/jaqueta-jeans-bordado-azul-luzia-fazzolli-79261/301906-5.jpg?w=630&h=930&v=no-change&qs=ignore" alt="Jaqueta Jeans com Bordados">
+                    <h3>Jaqueta Jeans com Bordados</h3>
+                    <p>Jaqueta jeans com bordados coloridos, perfeita para dar um toque divertido ao visual.</p>
+					<p class="price">R$ 99,90</p>
+					<button class="buy-button" onclick="addToCart('Jaqueta Jeans com Bordados', 59.90)">Comprar Agora</button>
+                </a>
+            </div>
+        </div>
+
+        <h2>Fitness</h2>
+        <div class="product-grid2">
+            <div class="product" id="produto5">
+                <a href="#">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBr-onbMmPVHddqyC00chKU9yHN0YksZtJMQ&s" alt="Legging Preta High-Waist">
+                    <h3>Legging Preta High-Waist</h3>
+                    <p>Legging preta com cós alto, ideal para atividades físicas e uso casual.</p>
+					<p class="price">R$ 99,90</p>
+					<button class="buy-button" onclick="addToCart('Legging Preta High-Waist', 59.90)">Comprar Agora</button>
+                </a>
+            </div>
+            <div class="product" id="produto6">
+                <a href="#">
+                    <img src="https://fitli.fbitsstatic.net/img/p/top-esportivo-activite-preto-com-bojo-removivel-74038/267550.jpg?w=880&h=950&v=no-change&qs=ignore" alt="Top Esportivo com Bojo Removível">
+                    <h3>Top Esportivo com Bojo Removível</h3>
+                    <p>Top esportivo com bojo removível e alças ajustáveis.</p>
+					<p class="price">R$ 99,90</p>
+					<button class="buy-button" onclick="addToCart('Top Esportivo com Bojo Removível', 59.90)">Comprar Agora</button>
+                </a>
+            </div>
+            <div class="product" id="produto7">
+                <a href="#">
+                    <img src="https://d3f0hho2olhh9j.cloudfront.net/claudiarosa/6877b78b5db3.jpg" alt="Short Saia Estampado">
+                    <h3>Short Saia Estampado</h3>
+                    <p>Short saia estampado com tecido tecnológico que absorve o suor.</p>
+					<p class="price">R$ 99,90</p>
+					<button class="buy-button" onclick="addToCart('Short Saia Estampado', 59.90)">Comprar Agora</button>
+                </a>
+            </div>
+            <div class="product" id="produto8">
+                <a href="#">
+                    <img src="https://www.lojamirante.com.br/uploads/produtos/regata-feminina-dry-fit-cinza-chumbo-protecao-uv-30-617d804a6631a.jpg" alt="Regata Dry Fit Cinza">
+                    <h3>Regata Dry Fit Cinza</h3>
+                    <p>Regata em tecido dry fit, que facilita a transpiração.</p>
+					<p class="price">R$ 99,90</p>
+					<button class="buy-button" onclick="addToCart('Regata Dry Fit Cinza', 59.90)">Comprar Agora</button>
+                </a>
+            </div>
+        </div>
+
+        <h2>Elegância Clássica</h2>
+        <div class="product-grid2">
+            <div class="product" id="produto9">
+                <a href="#">
+                    <img src="https://www.dracherie.com.br/media/catalog/product/cache/005dfcc80f09c8357fe87f2503f2c942/b/l/blazer-feminino-helena---preto-capa.jpg" alt="Terno Feminino Preto">
+                    <h3>Terno Feminino Preto</h3>
+                    <p>Conjunto de terno feminino preto, composto por blazer e calça reta.</p>
+					<p class="price">R$ 99,90</p>
+					<button class="buy-button" onclick="addToCart('Terno Feminino Preto', 59.90)">Comprar Agora</button>
+                </a>
+            </div>
+            <div class="product" id="produto10">
+                <a href="#">
+                    <img src="https://torratorra.vtexassets.com/arquivos/ids/1321165/18222000110-052-01.jpg?v=638464780789730000" alt="Camisa Social Branca">
+                    <h3>Camisa Social Branca</h3>
+                    <p>Camisa social branca com detalhes em renda.</p>
+					<p class="price">R$ 99,90</p>
+					<button class="buy-button" onclick="addToCart('Camisa Social Branca', 59.90)">Comprar Agora</button>
+                </a>
+            </div>
+            <div class="product" id="produto11">
+                <a href="#">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9aAyWuswF0MtJP0d1Jhw5bwii8uz42skk-Q&s" alt="Saia Lápis Vermelha">
+                    <h3>Saia Lápis Vermelha</h3>
+                    <p>Saia lápis vermelha em tecido acetinado.</p>
+					<p class="price">R$ 99,90</p>
+					<button class="buy-button" onclick="addToCart('Saia Lápis Vermelha', 59.90)">Comprar Agora</button>
+                </a>
+            </div>
+            <div class="product" id="produto12">
+                <a href="#">
+                    <img src="https://images.tcdn.com.br/img/img_prod/710746/sandalia_salto_alto_couro_nude_14677_1_20200415092146.jpg" alt="Salto Alto Nude">
+                    <h3>Salto Alto Nude</h3>
+                    <p>Salto alto nude com design clássico.</p>
+					<p class="price">R$ 99,90</p>
+					<button class="buy-button" onclick="addToCart('>Salto Alto Nude', 59.90)">Comprar Agora</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2022 Curiosa Modas. Todos os direitos reservados.</p>
+    </footer>
+	<!-- Modal para exibir o carrinho -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Carrinho de Compras</h2>
+            <div id="cart-content"></div>
+        </div>
+    </div>
+
+    <script>
+        // Função para abrir o modal do carrinho
+        function showCart() {
+            document.getElementById('cart-modal').style.display = 'block';
+            updateCartCount();
+            showCart();
+        }
+
+        // Função para fechar o modal do carrinho
+        function closeModal() {
+            document.getElementById('cart-modal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

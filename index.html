@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosa Modas</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+	<script src="../js/cart.js" defer></script>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="../images/logo.png" alt="Logo Curiosa Modas">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre Nós</a></li>
+                <li><a href="products.html">Produtos</a></li>
+                <li><a href="contact.html">Contato</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+				<li><a href="cart.html" onclick="showCart(); return false;">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count">0</span>
+                    </a>
+					</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <img src="../images/banner1.png" alt="Banner Principal">
+    </section>
+
+    <section id="featured-products">
+        <h1>Produtos Destaques</h1>
+        <div class="product-grid">
+            <div class="product">
+                <a href="products.html#produto1">
+                    <img src="https://trimix.vtexassets.com/arquivos/ids/244470/2-005223STLE-TELHACL90131.jpg?v=637934021109600000" alt="Blusa Cropped Listrada">
+                    <h3>Blusa Cropped Listrada</h3>
+                    <p>Blusa cropped com listras horizontais em tons neutros.</p>
+					<p class="price">R$ 99,90</p>
+					<button class="buy-button" onclick="addToCart('Blusa Cropped Listrada', 59.90)">Comprar Agora</button>
+                </a>
+            </div>
+            <div class="product">
+                <a href="products.html#produto2">
+                    <img src="https://loftystyle.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/2/7/276a8912_1.png" alt="Calça Pantacourt Bege">
+                    <h3>Calça Pantacourt Bege</h3>
+                    <p>Calça pantacourt em tecido leve, perfeita para o verão.</p>
+					<p class="price">R$ 99,90</p>
+					<button class="buy-button" onclick="addToCart('Calça Pantacourt Bege', 59.90)">Comprar Agora</button>
+                </a>
+            </div>
+            <div class="product">
+                <a href="products.html#produto3">
+                    <img src="https://acdn.mitiendanube.com/stores/004/765/280/products/img-20240921-wa0164-a85db91a8f7cd7b61817269450290927-1024-1024.jpg" alt="Vestido Midi Floral">
+                    <h3>Vestido Midi Floral</h3>
+                    <p>Vestido midi com estampa floral delicada.</p>
+					<p class="price">R$ 99,90</p>
+					<button class="buy-button" onclick="addToCart('Vestido Midi Floral', 59.90)">Comprar Agora</button>
+                </a>
+            </div>
+            <div class="product">
+                <a href="products.html#produto4">
+                    <img src="https://qvestido.fbitsstatic.net/img/p/jaqueta-jeans-bordado-azul-luzia-fazzolli-79261/301906-5.jpg?w=630&h=930&v=no-change&qs=ignore" alt="Jaqueta Jeans com Bordados">
+                    <h3>Jaqueta Jeans com Bordados</h3>
+                    <p>Jaqueta jeans com bordados coloridos, perfeita para dar um toque divertido ao visual.</p>
+					<p class="price">R$ 99,90</p>
+					<button class="buy-button" onclick="addToCart('Jaqueta Jeans com Bordados', 59.90)">Comprar Agora</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="promotions">
+        <h1>Promoções Especiais</h1>
+        <div class="promotion-container">
+            <div class="promotion">
+                <a href="../html/products.html">
+				<img src="../images/banner1.png" alt="Promoção Especial">
+                <h3>20% de Desconto em Promoções</h3>
+                <p>Confira nossas ofertas especiais e aproveite!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2022 Curiosa Modas. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
